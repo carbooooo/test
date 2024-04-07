@@ -1,0 +1,19 @@
+.body{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    
+}
+
+.shop_layer{
+    margin-bottom:50px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+}
+.shop_box{
+    padding:70px;
+    background-color: black;
+    margin-right:20px;
+    border-radius:20%;
+}
