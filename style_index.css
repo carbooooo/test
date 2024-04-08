@@ -15,10 +15,10 @@
 /* Box principale del menù*/
 .menu{
     padding:70px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius:20%;
     box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
-    transition:all 0.25s;
+    transition:all 0.5s;
 }
 .menu:hover{
     box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.5);
@@ -26,24 +26,29 @@
 
 /* Div dove sono contenute le voci del menù*/
 .voice_section{
-    margin:50px;    
+    margin:50px;
+    display: grid;
+    justify-content: center; 
+    align-items: center;     
 }
 
 .menu_voice{
-    color:white;
+    color:gray;
     margin-bottom:5px;
     font-size:25px;
     font-family:'Franklin Gothic Medium';
-    transition:all 0.25s;
+    transition:all 0.3s;
     text-decoration:none;
 }
 .menu_voice:hover{
     cursor: pointer;
-    color:gray;
-    margin-bottom:5px;
+    color: rgb(135, 187, 207);
+    /*color:gray;*/
+    margin-bottom:7px;
     font-size:25.5px;
     font-family:'Franklin Gothic Medium';
     text-decoration:none;
+    
 }
 
 .social_section{
