@@ -1,0 +1,141 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.body{
+    background-color: rgb(46, 45, 45);
+    margin-bottom:100px;
+    margin-right:0px;
+    margin-left:0px;
+    
+}
+
+/* Parte superiore*/
+.top_layer{
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.actions{
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center; 
+    align-items: center; 
+}
+.actions_voice{
+    color:white;
+    font-size:20px;
+    font-family:'Franklin Gothic Medium';
+    transition:all 0.3s;
+}
+.actions_voice:hover{
+    cursor:pointer;
+    color: rgb(135, 187, 207);
+    font-size:22px;
+    font-family:'Franklin Gothic Medium';
+}
+
+.white_line{
+    margin-top:10px;
+    height: 0.5px;
+    background-color: white;
+}
+
+
+/* Sezione felpa*/
+.item_section{
+    margin-top:7%;
+    display:grid;
+    justify-content: center; 
+}
+
+.item_parts{
+    display: grid;
+    grid-template-columns: 500px 400px;
+}
+
+.name{
+    color:white;
+    font-size:30px;
+    margin-bottom:5px;
+    font-family:'Franklin Gothic Medium';
+}
+
+.taglie{
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.taglia{
+    margin-top:20%;
+    margin-right:10px;
+    padding:15px;
+    font-size:20px;
+    text-align: center;
+    background-color: white;
+    font-family:'Franklin Gothic Medium';
+    transition:all 0.25s;
+}
+
+.taglia:hover{
+    margin-top:20%;
+    margin-right:10px;
+    padding:15px;
+    font-size:20px;
+    text-align: center;
+    background-color: black;
+    color:white;
+    font-family:'Franklin Gothic Medium';
+}
+
+.cart_section{
+    display:grid;
+    grid-template-columns: 75% 25%;
+}
+.add_cart{
+    color:white;
+    font-size:25px;
+    margin-top:25px;
+    margin-bottom:5px;
+    font-family:'Franklin Gothic Medium';
+}
+
+.info{
+    margin-top:35px;
+    margin-bottom:5px;
+}
+
+.details{
+    color:white;
+    font-size:15px;
+    margin-top:5px;
+    font-family:'Franklin Gothic Medium';
+    transition:all 0.25s;
+}
+.details:hover{
+    cursor: pointer;
+    color: rgb(135, 187, 207);
+    font-family:'Franklin Gothic Medium';
+}
+
+.image{
+    background-color: rgba(0, 0, 0, 0.35);
+    
+    height: 450px;
+    width:400px;
+    border-radius: 10%;
+    margin-bottom:5px;
+    transition:all 0.25s;
+}
+.image:hover{
+    cursor:pointer;
+    box-shadow: 0px 0px 15px 1px rgb(163, 211, 230);
+}
+
+.product_description{
+    margin-top:25%;
+    width:50%;
+    color:white;
+    font-size:30px;
+    font-family:'Franklin Gothic Medium';
+}
+

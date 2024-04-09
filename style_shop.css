@@ -4,11 +4,9 @@
 
 .body{
     background-color: rgb(46, 45, 45);
-    
     margin-bottom:100px;
     margin-right:0px;
     margin-left:0px;
-    
 }
 
 
@@ -62,10 +60,10 @@
 }
 
 .image{
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.35);
     
-    height:250px;
-    width:200px;
+    height:450px;
+    width:350px;
     border-radius: 10%;
     margin-bottom:5px;
     transition:all 0.25s;
