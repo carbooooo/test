@@ -43,9 +43,7 @@
 .menu_voice:hover{
     cursor: pointer;
     color: rgb(135, 187, 207);
-    /*color:gray;*/
     margin-bottom:7px;
-    font-size:25.5px;
     font-family:'Franklin Gothic Medium';
     text-decoration:none;
     

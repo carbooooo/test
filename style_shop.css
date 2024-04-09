@@ -1,16 +1,56 @@
-.body{
-    margin-top:50px;
-    margin-bottom:100px;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh;
+::-webkit-scrollbar {
+    display: none;
 }
 
+.body{
+    background-color: rgb(46, 45, 45);
+    
+    margin-bottom:100px;
+    margin-right:0px;
+    margin-left:0px;
+    
+}
+
+
+.top_layer{
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.actions{
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center; 
+    align-items: center; 
+}
+.actions_voice{
+    color:white;
+    font-size:20px;
+    font-family:'Franklin Gothic Medium';
+    transition:all 0.3s;
+}
+.actions_voice:hover{
+    cursor:pointer;
+    color: rgb(135, 187, 207);
+    font-size:22px;
+    font-family:'Franklin Gothic Medium';
+}
+
+.white_line{
+    margin-top:10px;
+    height: 0.5px;
+    background-color: white;
+}
+
+
+.item_section{
+    margin-top:7%;
+    display:grid;
+    justify-content: center; 
+}
 .shop_layer{
-    margin-top:20px;
+    margin-top:2%;
     display: grid;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 33% 33% 33%;
 }
 .shop_box{
     font-family:'Franklin Gothic Medium';
@@ -18,22 +58,30 @@
     padding:20px;
     justify-content: center; 
     align-items: center; 
-    background-color: black;
-    margin-right:20px;
+    margin-right:50px;
 }
 
 .image{
-    background-color: white;
-    height:80px;
-    width:80px;
-    margin-bottom:30px;
-}
-.description{
-    color:white;
+    background-color: rgba(0, 0, 0, 0.6);
     
-    margin-bottom:30px;
+    height:250px;
+    width:200px;
+    border-radius: 10%;
+    margin-bottom:5px;
+    transition:all 0.25s;
+}
+.image:hover{
+    cursor:pointer;
+    box-shadow: 0px 0px 15px 1px rgb(163, 211, 230);
+}
+.name{
+    color:white;
+    font-size:30px;
+    margin-left:15px;
+    margin-bottom:5px;
 }
 
 .price{
+    margin-left:15px;
     color:white;
 }
