@@ -24,7 +24,7 @@
     color:white;
     font-size:20px;
     font-family:'Franklin Gothic Medium';
-    transition:all 0.3s;
+    transition:all 0.15s;
 }
 .actions_voice:hover{
     cursor:pointer;

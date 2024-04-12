@@ -25,7 +25,7 @@
     color:white;
     font-size:20px;
     font-family:'Franklin Gothic Medium';
-    transition:all 0.3s;
+    transition:all 0.15s;
 }
 .actions_voice:hover{
     cursor:pointer;
@@ -77,6 +77,29 @@
 }
 
 .taglia:hover{
+    cursor:pointer;
+    margin-top:20%;
+    margin-right:10px;
+    padding:15px;
+    font-size:20px;
+    text-align: center;
+    background-color: black;
+    color:white;
+    font-family:'Franklin Gothic Medium';
+}
+
+.taglia:active{
+    margin-top:20%;
+    margin-right:10px;
+    padding:15px;
+    font-size:20px;
+    text-align: center;
+    background-color: grey;
+    color:white;
+    font-family:'Franklin Gothic Medium';
+}
+
+.taglia.selected{
     margin-top:20%;
     margin-right:10px;
     padding:15px;
@@ -89,7 +112,7 @@
 
 .cart_section{
     display:grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 60% 40%;
 }
 .add_cart{
     color:white;
@@ -99,6 +122,97 @@
     font-family:'Franklin Gothic Medium';
 }
 
+.heart{
+    cursor:pointer;
+    margin-top:33px;
+    position:relative;
+    height:20px;
+    width:20px;
+    background: gray;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    border-radius:  0 0 0 1px;
+    transform: rotate(-45deg);
+}
+
+
+.heart.fill-color{
+    background-color: red;
+}
+.heart::before{
+    position:absolute;
+    content:"";
+    top:-50%;
+    left:0;
+    height:20px;
+    width:20px;
+    background: inherit;
+    border-radius: 50%;
+}
+.heart::after{
+    position:absolute;
+    content:"";
+    right:-50%;
+    top:0;
+    height:20px;
+    width:20px;
+    background: inherit;
+    border-radius: 50%;
+}
+
+.animation_heart{
+    margin-top:-20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:20px;
+    width:20px;
+    background: red;
+    transform:rotate(-45deg);
+    border-radius: 0 0 0 0 5px;
+    cursor:pointer;
+    
+    visibility: hidden;
+}
+
+.animation_heart.animation{
+    animation: popup .8s linear;
+    visibility: visible;
+}
+
+.animation_heart::after{
+    position:absolute;
+    content:"";
+    height:100%;
+    width:100%;
+    top:-50%;
+    right:0;
+    background: inherit;
+    border-radius:50%;
+}
+
+.animation_heart::before{
+    position:absolute;
+    content:"";
+    height:100%;
+    width:100%;
+    top:0;
+    right:-50%;
+    background: inherit;
+    border-radius:50%;
+}
+
+@keyframes popup{
+    100%{
+        transform: scale(1.9) rotate(-45deg);
+        opacity: 0;
+    }
+}
+
+
+
 .info{
     margin-top:35px;
     margin-bottom:5px;
@@ -106,10 +220,12 @@
 
 .details{
     color:white;
+    text-decoration: none;
     font-size:15px;
     margin-top:5px;
     font-family:'Franklin Gothic Medium';
     transition:all 0.25s;
+    
 }
 .details:hover{
     cursor: pointer;
@@ -131,8 +247,15 @@
     box-shadow: 0px 0px 15px 1px rgb(163, 211, 230);
 }
 
+.descr{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .product_description{
-    margin-top:25%;
+    
+    margin-top:15%;
     width:50%;
     color:white;
     font-size:30px;
